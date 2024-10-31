@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/views/homeView.dart';
 
 void main() {
-  runApp(const myWidge());
+  runApp(const MyWidge());
 }
 
-class myWidge extends StatelessWidget {
-  const myWidge({
+class MyWidge extends StatelessWidget {
+  const MyWidge({
     super.key,
   });
 
