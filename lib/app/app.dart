@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/views/calcView.dart';
 import 'package:flutter_application_1/views/homeView.dart';
 
 void main() {
@@ -13,6 +14,9 @@ class MyWidge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
+        // theme: ThemeData(
+        //   primarySwatch: Colors.red,
+        // ),
         title: "hello world", 
         home: HomeView(),
     );

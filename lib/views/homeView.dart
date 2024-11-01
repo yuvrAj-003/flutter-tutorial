@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/views/calcView.dart';
 
 void main(){
   runApp(const HomeView());
@@ -11,20 +12,15 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Material(
+    return Scaffold(
+      backgroundColor: Colors.deepOrange,
+      body: SafeArea(
+        bottom: false,
         child: Container(
-          color: Colors.red,
-          child: const Center(
-            child: Text(
-              "hello world",
-              style: TextStyle(
-                fontSize: 40,
-                color: Colors.white,
-                fontWeight: FontWeight.bold
-              )
-            )
-          )
+          color: Colors.deepOrange,
+          child: const CalcView()
         )
+      )
         
       );
   }
