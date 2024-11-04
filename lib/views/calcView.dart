@@ -40,7 +40,7 @@ class DisplayBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextField(
       keyboardType: TextInputType.number,
-      // autofocus: true ,
+      autofocus: true ,
       decoration: InputDecoration(
         // focused border
         focusedBorder: OutlineInputBorder(
