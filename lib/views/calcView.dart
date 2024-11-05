@@ -41,7 +41,6 @@ class _CalcViewState extends State<CalcView> {
 
   @override
   void dispose() {
-    // TODO: implement dispose
     _listener.dispose();
     super.dispose();
   }
@@ -49,7 +48,7 @@ class _CalcViewState extends State<CalcView> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(32.0),
+      padding: const EdgeInsets.all(32.0),
       child: Column(
         children: [
           // calc display
@@ -69,6 +68,7 @@ class _CalcViewState extends State<CalcView> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
+              // add button
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
@@ -78,6 +78,7 @@ class _CalcViewState extends State<CalcView> {
                 backgroundColor: Colors.deepOrangeAccent,
                 child: const Icon(CupertinoIcons.add)
               ),
+              // subtract button
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
@@ -87,6 +88,7 @@ class _CalcViewState extends State<CalcView> {
                 backgroundColor: Colors.deepOrangeAccent,
                 child: const Icon(CupertinoIcons.minus)
               ),
+              // multiplication button
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
@@ -96,6 +98,7 @@ class _CalcViewState extends State<CalcView> {
                 backgroundColor: Colors.deepOrangeAccent,
                 child: const Icon(CupertinoIcons.multiply)
               ),
+              // divide button
               FloatingActionButton(
                 onPressed: () {
                   setState(() {
@@ -109,6 +112,7 @@ class _CalcViewState extends State<CalcView> {
             ]
           ),
           const SizedBox(height: 20),
+          // clear button
           FloatingActionButton.extended(
             onPressed: () {
               setState(() {
