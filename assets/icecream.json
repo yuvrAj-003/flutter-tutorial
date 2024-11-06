@@ -1,0 +1,149 @@
+{
+    "icecreams":[
+      {
+        "flavour": "Vanilla",
+        "description": "Classic vanilla ice cream made with real vanilla beans.",
+        "toppings": ["Chocolate Syrup", "Sprinkles", "Cherries"],
+        "price": 3.50,
+        "image": "https://images.unsplash.com/photo-1570197788417-0e82375c9371?q=80&w=1912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ingredients": [
+          {
+            "name": "Milk",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "Sugar",
+            "quantity": "3/4 cup"
+          },
+          {
+            "name": "Cream",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "Vanilla Beans",
+            "quantity": "2 pods"
+          },
+          {
+            "name": "Egg Yolks",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "flavour": "Chocolate",
+        "description": "Rich and creamy chocolate ice cream made with premium cocoa.",
+        "toppings": ["Whipped Cream", "Chocolate Chips", "Nuts"],
+        "price": 4.00,
+        "image": "https://images.unsplash.com/photo-1649067842726-a5c973a3a62c?q=80&w=2944&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ingredients": [
+          {
+            "name": "Milk",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "Sugar",
+            "quantity": "3/4 cup"
+          },
+          {
+            "name": "Cocoa Powder",
+            "quantity": "1/2 cup"
+          },
+          {
+            "name": "Cream",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "Egg Yolks",
+            "quantity": "4"
+          }
+        ]
+      },
+      {
+        "flavour": "Strawberry",
+        "description": "Fresh strawberry ice cream bursting with real fruit flavor.",
+        "toppings": ["Fresh Strawberries", "Mint Leaves"],
+        "price": 4.50,
+        "image": "https://images.unsplash.com/photo-1555529211-3237f6e13d33?q=80&w=2803&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "ingredients": [
+          {
+            "name": "Milk",
+            "quantity": "2 cups"
+          },
+          {
+            "name": "Sugar",
+            "quantity": "3/4 cup"
+          },
+          {
+            "name": "Strawberries",
+            "quantity": "1 cup (pureed)"
+          },
+          {
+            "name": "Cream",
+            "quantity": "1 cup"
+          },
+          {
+            "name": "Egg Yolks",
+            "quantity": 4
+          }
+        ]
+      },
+      {
+        "flavour": "Butterscotch",
+        "description": "Refreshing mint ice cream with butterscotch flavour.",
+        "toppings": ["Chocolate Syrup",  "Crushed Mint Leaves"],
+        "price": 4.25,
+        "image":"https://images.unsplash.com/photo-1497547685087-79e2139d4d8d?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "ingredients":[
+           {
+             "name":"Milk",
+             "quantity":"2 cups"
+           },
+           {
+             "name":"Sugar",
+             "quantity":"3/4 cup"
+           },
+           {
+             "name":"Mint Extract",
+             "quantity":"1 teaspoon"
+           },
+           {
+             "name":"Chocolate Chips",
+             "quantity":"1/2 cup"
+           },
+           {
+             "name":"Cream",
+             "quantity":"1 cup"
+           }
+         ]
+      },
+      {
+        "flavour":"Cookies and Cream",
+         "description":"Creamy vanilla ice cream with chunks of chocolate cookies.",
+         "toppings":["Oreo Crumbles",  "Whipped Cream"],
+         "price":4.75,
+         "image":"https://images.unsplash.com/photo-1500710684893-8d0d9fbc639e?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         "ingredients":[
+           {
+             "name":"Milk",
+             "quantity":"2 cups"
+           },
+           {
+             "name":"Sugar",
+             "quantity":"3/4 cup"
+           },
+           {
+             "name":"Cookies (Oreos)",
+             "quantity":"1 cup (crumbled)"
+           },
+           {
+             "name":"Cream",
+             "quantity":"1 cup"
+           },
+           {
+             "name":"Egg Yolks",
+             "quantity":"4"
+           }
+         ]
+      }
+    ]
+  }
