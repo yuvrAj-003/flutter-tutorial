@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_application_1/views/calculator/calcView.dart';
 import 'package:flutter_application_1/views/ice_cream/IcecreamView.dart';
+// import 'package:flutter_application_1/views/calculator/calcView.dart';
+// import 'package:flutter_application_1/views/ice_cream/IcecreamView.dart';
 
 void main(){
   runApp(const HomeView());

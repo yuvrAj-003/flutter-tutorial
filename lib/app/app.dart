@@ -19,7 +19,7 @@ class MyWidge extends StatelessWidget {
           fontFamily: GoogleFonts.notoSansOsmanya().fontFamily
         ),
         title: "hello world", 
-        home: HomeView(),
+        home: const HomeView(),
     );
   }
 }
