@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/views/ice_cream/IcecreamView.dart';
+import 'package:flutter_application_1/views/ice_cream/views/IcecreamView.dart';
 // import 'package:flutter_application_1/views/calculator/calcView.dart';
 // import 'package:flutter_application_1/views/ice_cream/IcecreamView.dart';
 
-void main(){
+void main() {
   runApp(const HomeView());
 }
 
@@ -15,15 +15,11 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.amber,
-      body: SafeArea(
-        bottom: false,
-        child: Container(
-          // color: Colors.amber,
-          child: const Icecreamview()
-        )
-      )
-        
-      );
+        // backgroundColor: Colors.amber,
+        body: SafeArea(
+            bottom: false,
+            child: Container(
+                // color: Colors.amber,
+                child: const Icecreamview())));
   }
 }
