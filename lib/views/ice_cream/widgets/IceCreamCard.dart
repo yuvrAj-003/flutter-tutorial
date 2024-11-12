@@ -13,7 +13,7 @@ class IceCreamCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 400,
+      height: 300,
       // Hei(),
       child: Card(
         clipBehavior: Clip.hardEdge,
@@ -22,11 +22,15 @@ class IceCreamCard extends StatelessWidget {
           fit: StackFit.expand,
           children: [
             // add images in it
-            CachedNetworkImage(
-              imageUrl: icecream.image,
-              fit: BoxFit.cover,
-              color: Colors.purpleAccent.withOpacity(0.2),
-              colorBlendMode: BlendMode.color,
+            Hero(
+              tag: icecream.image,
+              child: CachedNetworkImage(
+                cacheKey: icecream.image,
+                imageUrl: icecream.image,
+                fit: BoxFit.cover,
+                // color: Colors.purpleAccent.withOpacity(0.2),
+                // colorBlendMode: BlendMode.color,
+              ),
             ),
             Align(
               alignment: Alignment.bottomLeft,

@@ -14,49 +14,87 @@ class IcecreamDetail extends StatelessWidget {
           title: Text(icecream.flavour),
           // elevation: 0.0,
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Row(
-                children: [
-                  Card(
-                      elevation: 0.0,
-                      color: Colors.transparent,
-                      child: CircleAvatar(
-                        radius: 100,
-                        backgroundImage:
-                            CachedNetworkImageProvider(icecream.image),
-                      )),
-                  const SizedBox(width: 10),
-                  Text("\$ ${icecream.price.toString()}",
-                      style: const TextStyle(
-                        fontSize: 40,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ],
-              ),
-              Text("Toppings", style: Theme.of(context).textTheme.displaySmall),
-              const SizedBox(
-                height: 10,
-              ),
-              SizedBox(
-                width: MediaQuery.sizeOf(context).width,
-                height: 100,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemBuilder: (context, iteration) {
-                    final topping = icecream.toppings[iteration];
-                    return Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Chip(label: Text(topping)),
-                    );
-                  },
-                  itemCount: icecream.toppings.length,
+        body: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Card(
+                        elevation: 0.0,
+                        color: Colors.transparent,
+                        child: Hero(
+                          tag: icecream.image,
+                          child: CircleAvatar(
+                            radius: 100,
+                            backgroundImage: CachedNetworkImageProvider(
+                                icecream.image,
+                                cacheKey: icecream.image),
+                          ),
+                        )),
+                    const SizedBox(width: 10),
+                    Text("\$ ${icecream.price.toString()}",
+                        style: const TextStyle(
+                          fontSize: 40,
+                          fontWeight: FontWeight.bold,
+                        )),
+                  ],
                 ),
-              )
-            ],
+                const SizedBox(
+                  height: 10,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(icecream.description),
+                ),
+                const SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Toppings",
+                      style: Theme.of(context).textTheme.displaySmall),
+                ),
+                const SizedBox(
+                  height: 10,
+                ),
+                SizedBox(
+                  width: MediaQuery.sizeOf(context).width,
+                  height: 100,
+                  child: ListView.builder(
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, iteration) {
+                      final topping = icecream.toppings[iteration];
+                      return Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Chip(label: Text(topping)),
+                      );
+                    },
+                    itemCount: icecream.toppings.length,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Ingredients",
+                      style: Theme.of(context).textTheme.displaySmall),
+                ),
+                SizedBox(
+                  width: MediaQuery.sizeOf(context).width,
+                  height: 200,
+                  child: ListView.builder(
+                    itemBuilder: (context, iteration) {
+                      final ingredient = icecream.ingredients[iteration];
+                      return Card(
+                          child: ListTile(
+                        title: Text(ingredient.name),
+                        subtitle: Text("QTY. ${ingredient.quantity}"),
+                      ));
+                    },
+                    itemCount: icecream.ingredients.length,
+                  ),
+                ),
+              ],
+            ),
           ),
         ));
   }

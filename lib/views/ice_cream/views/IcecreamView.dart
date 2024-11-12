@@ -27,9 +27,9 @@ class Icecreamview extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text("Ice cream view",
-              style: Theme.of(context).textTheme.displayMedium),
-          Text("ice cream view", style: Theme.of(context).textTheme.bodyMedium),
+          Text("Ice creams", style: Theme.of(context).textTheme.displayMedium),
+          Text("Get your ice creams",
+              style: Theme.of(context).textTheme.bodyMedium),
           const SizedBox(height: 20),
           Expanded(
               child: Center(
@@ -50,10 +50,10 @@ class Icecreamview extends StatelessWidget {
                           children: [
                             SizedBox(
                               width: MediaQuery.sizeOf(context).width,
-                              height: MediaQuery.sizeOf(context).height / 2,
+                              height: MediaQuery.sizeOf(context).height / 1.25,
                               // for rendering lists
                               child: ListView.builder(
-                                scrollDirection: Axis.horizontal,
+                                scrollDirection: Axis.vertical,
                                 // shrinkWrap: true,
                                 itemBuilder: (context, index) {
                                   final icecream = icecreams[index];
