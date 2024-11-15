@@ -14,12 +14,11 @@ class MyWidge extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData(
+      theme: ThemeData(
           primarySwatch: Colors.red,
-          fontFamily: GoogleFonts.notoSansOsmanya().fontFamily
-        ),
-        title: "hello world", 
-        home: const HomeView(),
+          fontFamily: GoogleFonts.notoSansOsmanya().fontFamily),
+      title: "hello world",
+      home: const HomeView(),
     );
   }
 }
